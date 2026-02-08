@@ -30,7 +30,7 @@ Alert Correlation (MITRE mapped)
 Active Response (Semi-Automated IPS)
 ```
 
-### 🔧 Tools & Technologies
+## 🔧 Tools & Technologies
 
 Apache HTTP Server – Targeted web service
 
@@ -46,9 +46,9 @@ Custom Rules & Decoders – Project-specific detections
 
 Linux Bash Scripts – Semi-automated prevention actions
 
-### 📌 Project Phases (Step-by-Step)
+## 📌 Project Phases (Step-by-Step)
 
-## Phase 1 – Baseline & Environment Setup
+### Phase 1 – Baseline & Environment Setup
 
 Deployed Apache web server on Ubuntu
 
@@ -62,7 +62,7 @@ Confirmed agent-to-manager communication
 
 ✔️ Goal: Understand “normal” before detecting “malicious”
 
-Phase 2 – Network Visibility with Suricata (IDS Mode)
+### Phase 2 – Network Visibility with Suricata (IDS Mode)
 
 Installed Suricata on the web server
 
@@ -74,7 +74,7 @@ Confirmed alerts in eve.json
 
 ✔️ Goal: Detect reconnaissance and web-based attacks
 
-Phase 3 – Centralized Log Collection (Wazuh)
+### Phase 3 – Centralized Log Collection (Wazuh)
 
 Configured Wazuh agent to collect:
 
@@ -88,7 +88,7 @@ Verified log ingestion using Wazuh logcollector
 
 ✔️ Goal: Single pane of glass for host + network logs
 
-Phase 4 – Custom Decoders (SOC Intelligence Layer)
+### Phase 4 – Custom Decoders (SOC Intelligence Layer)
 
 Created custom decoders on the SOC server to correctly parse:
 
@@ -104,7 +104,7 @@ Apache HTTP access patterns
 
 ✔️ Goal: Teach SOC how to “understand” raw logs
 
-Phase 5 – Custom Detection Rules
+### Phase 5 – Custom Detection Rules
 
 Developed SOC-specific rules mapped to real attack behavior:
 
@@ -122,7 +122,7 @@ Enumeration and abnormal access patterns
 
 ✔️ Goal: Turn decoded events into actionable alerts
 
-Phase 6 – Alert Correlation & MITRE ATT&CK Mapping
+### Phase 6 – Alert Correlation & MITRE ATT&CK Mapping
 
 Correlated Suricata + Apache + host logs
 
@@ -134,7 +134,7 @@ Verified visibility in Wazuh Dashboard
 
 ✔️ Goal: Explain attacks in attacker-centric language
 
-Phase 7 – Semi-Automated Prevention (IPS-Style Response)
+### Phase 7 – Semi-Automated Prevention (IPS-Style Response)
 
 Implemented post-detection response actions:
 
@@ -153,35 +153,7 @@ Demonstrated detection → response workflow
 
 ✔️ Goal: Move from IDS → Preventive control
 
-🔐 SOC Server – Configuration Changes Summary
-Modified Files
-
-/var/ossec/etc/ossec.conf
-
-Enabled active response
-
-Added whitelist for SOC safety
-
-/var/ossec/etc/decoders/
-
-suricata_decoders.xml
-
-apache_decoders.xml
-
-/var/ossec/etc/rules/
-
-suricata_rules.xml
-
-apache_rules.xml
-
-Validation Commands
-sudo /var/ossec/bin/wazuh-analysisd -t
-sudo ls /var/ossec/logs/alerts
-
-
-✔️ Confirms SOC logic is live and stable
-
-📊 SOC Validation Evidence
+## 📊 SOC Validation Evidence
 
 Suricata alerts detected Nmap scans
 
@@ -193,7 +165,7 @@ Visible in Wazuh Dashboard
 
 Active response logic triggered safely
 
-🎯 What This Project Demonstrates
+## 🎯 What This Project Demonstrates
 
 Real SOC detection workflows
 
@@ -205,7 +177,7 @@ Safe, semi-automated prevention
 
 Industry-aligned blue-team practices
 
-🚀 Why This Project Stands Out
+## 🚀 Why This Project Stands Out
 
 ✔️ Not a copy-paste lab
 ✔️ Custom rules & decoders
@@ -213,7 +185,7 @@ Industry-aligned blue-team practices
 ✔️ SOC-ready explanation
 ✔️ Interview-ready depth
 
-🧠 Future Enhancements (Optional)
+## 🧠 Future Enhancements (Optional)
 
 Full Suricata IPS inline mode
 
