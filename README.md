@@ -1,16 +1,20 @@
-🛡️ Linux Web Server Adversary Emulation with Detection & Prevention Lab
+## 🛡️ Linux Web Server Adversary Emulation with Detection & Prevention Lab
 
 A hands-on Security Operations Center (SOC) lab designed to simulate real-world web attacks, detect them using open-source security tooling, and apply post-detection response actions in a controlled Linux environment.
 
 This project demonstrates end-to-end blue-team workflows — from log ingestion and threat detection to alert correlation and semi-automated response.
 
-🧱 Lab Architecture
+## 🧱 Lab Architecture
+
 Machines Used
 Role	OS	Purpose
 SOC Server	Ubuntu	Centralized detection, correlation, alerting, and response
 Web Server	Ubuntu	Apache web server + Suricata IDS/IPS + Wazuh agent
 Attacker VM	Linux	Controlled adversary simulation (recon & web attacks)
-🔁 End-to-End SOC Flow
+
+## 🔁 End-to-End SOC Flow
+
+```
 Attacker VM
    ↓
 Web Server (Apache + Suricata)
@@ -24,8 +28,9 @@ Detection Rules & Decoders
 Alert Correlation (MITRE mapped)
    ↓
 Active Response (Semi-Automated IPS)
+```
 
-🔧 Tools & Technologies
+### 🔧 Tools & Technologies
 
 Apache HTTP Server – Targeted web service
 
@@ -41,8 +46,9 @@ Custom Rules & Decoders – Project-specific detections
 
 Linux Bash Scripts – Semi-automated prevention actions
 
-📌 Project Phases (Step-by-Step)
-Phase 1 – Baseline & Environment Setup
+### 📌 Project Phases (Step-by-Step)
+
+## Phase 1 – Baseline & Environment Setup
 
 Deployed Apache web server on Ubuntu
 
