@@ -177,14 +177,6 @@ Safe, semi-automated prevention
 
 Industry-aligned blue-team practices
 
-## 🚀 Why This Project Stands Out
-
-✔️ Not a copy-paste lab
-✔️ Custom rules & decoders
-✔️ Detection → Response pipeline
-✔️ SOC-ready explanation
-✔️ Interview-ready depth
-
 ## 🧠 Future Enhancements (Optional)
 
 Full Suricata IPS inline mode
