@@ -11,12 +11,6 @@ SOC Server	   Central monitoring, detection & response
 Web Server	   Vulnerable Apache web server
 Attacker VM	   Simulated attacker machine
 
-Machines Used
-Role	OS	Purpose
-SOC Server	Ubuntu	Centralized detection, correlation, alerting, and response
-Web Server	Ubuntu	Apache web server + Suricata IDS/IPS + Wazuh agent
-Attacker VM	Linux	Controlled adversary simulation (recon & web attacks)
-
 ## 🔁 End-to-End SOC Flow
 
 ```
