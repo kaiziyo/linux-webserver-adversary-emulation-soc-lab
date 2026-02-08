@@ -1,4 +1,4 @@
-## 🛡️ Linux Web Server Adversary Emulation with Detection & Prevention Lab
+# 🛡️ Linux Web Server Adversary Emulation with Detection & Prevention Lab
 
 A hands-on Security Operations Center (SOC) lab designed to simulate real-world web attacks, detect them using open-source security tooling, and apply post-detection response actions in a controlled Linux environment.
 
