@@ -6,10 +6,11 @@ This project demonstrates end-to-end blue-team workflows — from log ingestion 
 
 ## 🧱 Lab Architecture
 
-Machine	            Role
-SOC Server	   Central monitoring, detection & response
-Web Server	   Vulnerable Apache web server
-Attacker VM	   Simulated attacker machine
+| Machine       | Role |
+|--------------|------|
+| SOC Server   | Central monitoring, detection & response |
+| Web Server   | Vulnerable Apache web server |
+| Attacker VM  | Simulated attacker machine |
 
 ## 🔁 End-to-End SOC Flow
 
