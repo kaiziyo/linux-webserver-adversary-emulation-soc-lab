@@ -187,5 +187,7 @@ Atomic Red Team integration
 
 Threat intelligence enrichment
 
+----------------------------------------------------------------------------------------------
+
 The goal of this project is to demonstrate practical blue-team skills, including detection engineering, log analysis, and incident response, using tools commonly found in enterprise SOC environments.
 
